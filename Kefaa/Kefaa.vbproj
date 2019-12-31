@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7DB2FF4-29B0-4D34-926E-6D8814AB43D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Kefaa.My.MyApplication</StartupObject>
+    <RootNamespace>Kefaa</RootNamespace>
+    <AssemblyName>Kefaa</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Halma\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Kefaa.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Kefaa.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FF2F4DB7969C9FD0FA85E6BD609F12CA6F6BD7CB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Kefaa_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Interfaces\التسجيل.Designer.vb">
+      <DependentUpon>التسجيل.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\التسجيل.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة أعمالي - متطوع.Designer.vb">
+      <DependentUpon>شاشة أعمالي - متطوع.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة أعمالي - متطوع.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة الرئيسية - متطوع.Designer.vb">
+      <DependentUpon>شاشة الرئيسية - متطوع.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة الرئيسية - متطوع.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة الفعاليات - متطوع.Designer.vb">
+      <DependentUpon>شاشة الفعاليات - متطوع.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة الفعاليات - متطوع.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجل جديد كمتطوع.Designer.vb">
+      <DependentUpon>شاشة تسجل جديد كمتطوع.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجل جديد كمتطوع.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجيل الدخول.Designer.vb">
+      <DependentUpon>شاشة تسجيل الدخول.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجيل الدخول.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجيل جديد كمنظمة.Designer.vb">
+      <DependentUpon>شاشة تسجيل جديد كمنظمة.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجيل جديد كمنظمة.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجيل جديد.Designer.vb">
+      <DependentUpon>شاشة تسجيل جديد.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجيل جديد.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجيل دخول كمتطوع.Designer.vb">
+      <DependentUpon>شاشة تسجيل دخول كمتطوع.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجيل دخول كمتطوع.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجيل دخول كمنظمة.Designer.vb">
+      <DependentUpon>شاشة تسجيل دخول كمنظمة.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة تسجيل دخول كمنظمة.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة حسابي - متطوع.Designer.vb">
+      <DependentUpon>شاشة حسابي - متطوع.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة حسابي - متطوع.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة لوحة التحكم - الأدارة.Designer.vb">
+      <DependentUpon>شاشة لوحة التحكم - الأدارة.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة لوحة التحكم - الأدارة.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة لوحة التحكم الرئيسية - ملف المنظمة - منظمة.Designer.vb">
+      <DependentUpon>شاشة لوحة التحكم الرئيسية - ملف المنظمة - منظمة.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة لوحة التحكم الرئيسية - ملف المنظمة - منظمة.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة لوحة التحكم الرئيسية - منظمة.Designer.vb">
+      <DependentUpon>شاشة لوحة التحكم الرئيسية - منظمة.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة لوحة التحكم الرئيسية - منظمة.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة لوحة تحكم - الفعاليات - اضافة فعالية - منظمة.Designer.vb">
+      <DependentUpon>شاشة لوحة تحكم - الفعاليات - اضافة فعالية - منظمة.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة لوحة تحكم - الفعاليات - اضافة فعالية - منظمة.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة لوحة تحكم - الفعاليات - فعاليات نشطة - منظمة.Designer.vb">
+      <DependentUpon>شاشة لوحة تحكم - الفعاليات - فعاليات نشطة - منظمة.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة لوحة تحكم - الفعاليات - فعاليات نشطة - منظمة.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة ملفي - متطوع.Designer.vb">
+      <DependentUpon>شاشة ملفي - متطوع.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة ملفي - متطوع.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة نسيت كلمة المرور.Designer.vb">
+      <DependentUpon>شاشة نسيت كلمة المرور.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\شاشة نسيت كلمة المرور.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\لوحة تحكم - الفعاليات - فعاليات مغلقة - منظمة.Designer.vb">
+      <DependentUpon>لوحة تحكم - الفعاليات - فعاليات مغلقة - منظمة.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Interfaces\لوحة تحكم - الفعاليات - فعاليات مغلقة - منظمة.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form29.Designer.vb">
+      <DependentUpon>Form29.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form29.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form30.Designer.vb">
+      <DependentUpon>Form30.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form30.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form31.Designer.vb">
+      <DependentUpon>Form31.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form31.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form34.Designer.vb">
+      <DependentUpon>Form34.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form34.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KefaaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KefaaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KefaaDataSet.vb">
+      <DependentUpon>KefaaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\Interfaces\التسجيل.resx">
+      <DependentUpon>التسجيل.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة أعمالي - متطوع.resx">
+      <DependentUpon>شاشة أعمالي - متطوع.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة الرئيسية - متطوع.resx">
+      <DependentUpon>شاشة الرئيسية - متطوع.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة الفعاليات - متطوع.resx">
+      <DependentUpon>شاشة الفعاليات - متطوع.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة تسجل جديد كمتطوع.resx">
+      <DependentUpon>شاشة تسجل جديد كمتطوع.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة تسجيل الدخول.resx">
+      <DependentUpon>شاشة تسجيل الدخول.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة تسجيل جديد كمنظمة.resx">
+      <DependentUpon>شاشة تسجيل جديد كمنظمة.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة تسجيل جديد.resx">
+      <DependentUpon>شاشة تسجيل جديد.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة تسجيل دخول كمتطوع.resx">
+      <DependentUpon>شاشة تسجيل دخول كمتطوع.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة تسجيل دخول كمنظمة.resx">
+      <DependentUpon>شاشة تسجيل دخول كمنظمة.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة حسابي - متطوع.resx">
+      <DependentUpon>شاشة حسابي - متطوع.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة لوحة التحكم - الأدارة.resx">
+      <DependentUpon>شاشة لوحة التحكم - الأدارة.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة لوحة التحكم الرئيسية - ملف المنظمة - منظمة.resx">
+      <DependentUpon>شاشة لوحة التحكم الرئيسية - ملف المنظمة - منظمة.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة لوحة التحكم الرئيسية - منظمة.resx">
+      <DependentUpon>شاشة لوحة التحكم الرئيسية - منظمة.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة لوحة تحكم - الفعاليات - اضافة فعالية - منظمة.resx">
+      <DependentUpon>شاشة لوحة تحكم - الفعاليات - اضافة فعالية - منظمة.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة لوحة تحكم - الفعاليات - فعاليات نشطة - منظمة.resx">
+      <DependentUpon>شاشة لوحة تحكم - الفعاليات - فعاليات نشطة - منظمة.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة ملفي - متطوع.resx">
+      <DependentUpon>شاشة ملفي - متطوع.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\شاشة نسيت كلمة المرور.resx">
+      <DependentUpon>شاشة نسيت كلمة المرور.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Interfaces\لوحة تحكم - الفعاليات - فعاليات مغلقة - منظمة.resx">
+      <DependentUpon>لوحة تحكم - الفعاليات - فعاليات مغلقة - منظمة.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form29.resx">
+      <DependentUpon>Form29.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form30.resx">
+      <DependentUpon>Form30.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form31.resx">
+      <DependentUpon>Form31.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form34.resx">
+      <DependentUpon>Form34.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KefaaDataSet.xsc">
+      <DependentUpon>KefaaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KefaaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KefaaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KefaaDataSet.xss">
+      <DependentUpon>KefaaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Kefaa_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DevExpress\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
